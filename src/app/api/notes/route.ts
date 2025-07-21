@@ -25,7 +25,7 @@ const sessions: Session[] = [
   }
 ];
 
-const completedSessions = sessions.filter((s) => s.endedAt !== null);
+const completedSessions = sessions.filter((s: Session) => s.endedAt !== null);
 
 const notesRef = collection(db, 'notes');
 
