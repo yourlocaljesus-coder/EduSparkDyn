@@ -7,8 +7,8 @@ import path from "path";
 let dictionary: Typo;
 
 try {
-  const aff = fs.readFileSync(path.resolve("./public/dictionaries/en_US/en_US.aff"), "utf-8");
-  const dic = fs.readFileSync(path.resolve("./public/dictionaries/en_US/en_US.dic"), "utf-8");
+ const aff = fs.readFileSync(path.resolve("./public/dictionaries/en_US.aff"), "utf-8");
+ const dic = fs.readFileSync(path.resolve("./public/dictionaries/en_US.dic"), "utf-8");
   dictionary = new Typo("en_US", aff, dic, );
 } catch (err) {
   console.error("❌ Failed to load Typo.js dictionary:", err);
