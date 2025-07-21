@@ -1,7 +1,7 @@
 import { db } from '@/lib/firebase'
 import { collection, addDoc, getDocs } from 'firebase/firestore'
 import { NextResponse } from 'next/server'
-import { Session } from '@/types/session';
+import { Session } from '@/session';
 
 const completedSessions = sessions.filter((s: Session) => s.endedAt !== null);
 
