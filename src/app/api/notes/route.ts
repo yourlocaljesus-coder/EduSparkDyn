@@ -3,7 +3,14 @@ import { collection, addDoc, getDocs } from 'firebase/firestore'
 import { NextResponse } from 'next/server'
 import { Session } from '@/session';
 
-const completedSessions = sessions.filter((s: Session) => s.endedAt !== null);
+const sessions: Session[] = [
+  { id: '1', userId: 'u1', startedAt: new Date(), endedAt: new Date(), duration: 1500, focusTopic: 'Math', wasSuccessful: true },
+  { id: '2', userId: 'u1', startedAt: new Date(), endedAt: null, duration: 0, focusTopic: 'Science', wasSuccessful: false }
+];
+
+const completedSessions = sessions.filter((s) => s.endedAt !== null);
+
+
 
 const notesRef = collection(db, 'notes')
 
