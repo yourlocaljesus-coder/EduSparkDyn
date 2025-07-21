@@ -30,7 +30,6 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/typo-js": "^1.2.2",
-    "prisma": "^6.10.1",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
