@@ -11,6 +11,7 @@
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "@huggingface/inference": "^4.1.0",
+    "@prisma/client": "^6.10.1",
     "class-variance-authority": "^0.7.1",
     "firebase": "^11.10.0",
     "framer-motion": "^12.23.6",
@@ -25,11 +26,13 @@
     "typo-js": "^1.2.5"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20.19.2",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "@types/typo-js": "^1.2.2",
-    "tailwindcss": "^4.0.0",
+    "prisma": "^6.10.1",
+    "tailwindcss": "^4",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
